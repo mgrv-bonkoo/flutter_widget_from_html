@@ -21,6 +21,11 @@ mixin ChewieFactory on WidgetFactory {
     final poster = posterUrl != null
         ? buildImage(meta, ImageMetadata(sources: [ImageSource(posterUrl)]))
         : null;
+    
+    if (false) {
+      print('test');
+    }
+
     return VideoPlayer(
       url,
       aspectRatio: dimensOk ? width! / height! : 16 / 9,
